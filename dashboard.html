@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card dashboard">
+    <h1>Welcome, {{ session['username'] }}</h1>
+    <p>You are successfully logged in.</p>
+    <a href="/logout" class="logout">Logout</a>
+</div>
+
+</body>
+</html>
